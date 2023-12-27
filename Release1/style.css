@@ -20,3 +20,16 @@ body {
     box-shadow: 10px 10px 50px #808080;
     border-radius: 8px;
 }
+
+/* Стили для диспеля */
+.clock .display{
+    padding: 40px 10px 10px;
+    border-radius: 6px;
+    background-color: #dddddd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset,
+                0 1px 1px #fafafa;
+    position: relative;
+    margin-top: 10px;
+}
+
+
