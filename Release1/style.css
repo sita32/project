@@ -54,5 +54,32 @@ body {
     opacity: 1;
 }
 
+/* Отображение времени и его анимация  */
 
+.display .timeDisplay{
+    display: flex;
+    justify-content: center;
+}
 
+.timeDisplay .time{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: 'Digital-7 Mono', sans-serif;
+}
+
+.timeDisplay .format{
+    font-size: 30px;
+    margin-top: 32px;
+    margin-left: 10px;
+    font-family: 'Text Me One', sans-serif;
+}
+
+.time .dot{
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    25%{opacity: 0;}
+}
