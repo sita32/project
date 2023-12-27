@@ -1,0 +1,22 @@
+/* Стили часов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dbe4e6;
+}
+
+.clock {
+    width: 520px;
+    padding: 40px;
+    background-color: #f3f3f3;
+    box-shadow: 10px 10px 50px #808080;
+    border-radius: 8px;
+}
