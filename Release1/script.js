@@ -1,4 +1,5 @@
-// Создание скрипта для переключателя 
+// 12 или 24 форматы
+
 const formatSwitchBtn = document.querySelector(".format-switch-btn");
 formatSwitchBtn.addEventListener("click", () => {
   formatSwitchBtn.classList.toggle("active");
@@ -9,31 +10,37 @@ formatSwitchBtn.addEventListener("click", () => {
     formatSwitchBtn.setAttribute("data-format", "12");
   }
 });
+
 // Настройка часов
-function digitalClock(){
-    let dateFunction = new Date()
-    let day = dateFunction.getDay()
-    let hours = dateFunction.getHours()
-    let minutes = dateFunction.getMinutes()
-    let seconds = dateFunction.getSeconds()
-    let timeFormat = 'AM'
+function digitalClock() {
+  let dateFunction = new Date();
+  let day = dateFunction.getDay();
+  let hours = dateFunction.getHours();
+  let minutes = dateFunction.getMinutes();
+  let seconds = dateFunction.getSeconds();
+  let timeFormat = "AM";
+  let formatValue = formatSwitchBtn.getAttribute("data-format");
 
-    timeFormat = hours >= 12 ? 'PM' : 'AM'
-    hours = hours == 0 ? 12 : hours
-    hours = hours > 12 ? hours - 12 : hours
-    hours = hours < 10 ? '0' + hours : hours
-    minutes = minutes < 10 ? '0' + minutes : minutes
-    seconds = seconds < 10 ? '0' + seconds : seconds
+  if (formatValue === "12") {
+    hours = hours > 12 ? hours % 12 : hours;
+    timeFormat = hours >= 12 ? "PM" : "AM";
+  }
 
-    document.querySelector('.hours').innerHTML = hours
-    document.querySelector('.minutes').innerHTML = minutes
-    document.querySelector('.seconds').innerHTML = seconds
-    document.querySelector('.format').innerHTML = timeFormat
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    let todaysDay = document.querySelector(`.weekdays :nth-child(${day + 1})`)
-    todaysDay.classList.add('active')
+  document.querySelector(".hours").innerHTML = hours;
+  document.querySelector(".minutes").innerHTML = minutes;
+  document.querySelector(".seconds").innerHTML = seconds;
+
+  let weekdays = document.querySelectorAll(".weekdays span");
+  weekdays.forEach((weekday) => {
+    weekday.classList.remove("active");
+  });
+  weekdays[day].classList.add("active");
 }
-setInterval(digitalClock, 1000)
+setInterval(digitalClock, 1000);
 
 // Светлая/темная темы
 
