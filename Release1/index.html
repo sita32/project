@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="clock">
-                <!-- преключение 12-24 форматов -->
+        <!-- преключение 12-24 форматов -->
                 <i class="uil uil-ellipsis-v dot-menu-btn" id="active-menu">
                     <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6H20M4 12H20M4 18H20" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -21,22 +21,35 @@
                         <span class="clock-format-text" id="active-menu">24-hour format</span>
                         <div class="format-switch-btn"  id="active-menu" data-format="12"></div>
                     </li>
-                </ul>  
+                </ul>
+        
                 <div class="display">
+        
                     <div class="weekdays">
-                        <span>SUN</span>66
+                        <span>SUN</span>
+                        <span>MON</span>
+                        <span>TUE</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>SAT</span>
+                    </div>
+        
+                    <div class="timeDisplay">
+                        <div class="time">
                             <span class="hours">00</span><span class="dot">:</span>
                             <span class="minutes">00</span><span class="dot">:</span>
                             <span class="seconds">00</span>
                         </div>
                     </div>
-                    <!-- кнопка преключения темы -->
-             <input type="checkbox" id="toggle">
-             <label class="toggle" for="toggle">
-                 <i class="bx bxs-sun"></i>
-                 <i class="bx bx-moon"></i>
-                 <span class="ball"></span>
-             </label>
+        
+                     <input type="checkbox" id="toggle">
+        <!-- кнопка преключения темы -->
+                <label class="toggle" for="toggle">
+                    <i class="bx bxs-sun"></i>
+                    <i class="bx bx-moon"></i>
+                    <span class="ball"></span>
+                </label>
                 </div>
             </div>
             <div>
