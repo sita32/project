@@ -8,20 +8,23 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="clock">  
+    <div class="clock">
+                <!-- преключение 12-24 форматов -->
+                <i class="uil uil-ellipsis-v dot-menu-btn" id="active-menu">
+                    <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                </i>
+        
+                <ul class="dot-menu" id="active-menu">
+                    <li class="menu-item" id="active-menu">
+                        <span class="clock-format-text" id="active-menu">24-hour format</span>
+                        <div class="format-switch-btn"  id="active-menu" data-format="12"></div>
+                    </li>
+                </ul>  
                 <div class="display">
                     <div class="weekdays">
-                        <span>SUN</span>
-                        <span>MON</span>
-                        <span>TUE</span>
-                        <span>WED</span>
-                        <span>THU</span>
-                        <span>FRI</span>
-                        <span>SAT</span>
-                    </div>
-        
-                    <div class="timeDisplay">
-                        <div class="time">
+                        <span>SUN</span>66
                             <span class="hours">00</span><span class="dot">:</span>
                             <span class="minutes">00</span><span class="dot">:</span>
                             <span class="seconds">00</span>
