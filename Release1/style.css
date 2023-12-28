@@ -116,3 +116,21 @@ body {
 input {
     display: none;
 }
+
+/* Светлая тема */
+
+.light {
+    background: #fafafa;
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #151d2a;
+}
