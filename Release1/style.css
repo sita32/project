@@ -69,13 +69,6 @@ body {
     font-family: 'Digital-7 Mono', sans-serif;
 }
 
-.timeDisplay .format{
-    font-size: 30px;
-    margin-top: 32px;
-    margin-left: 10px;
-    font-family: 'Text Me One', sans-serif;
-}
-
 .time .dot{
     animation: blinker 1s linear infinite;
 }
