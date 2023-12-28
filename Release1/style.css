@@ -134,3 +134,23 @@ input {
 .light .toggle .ball {
     background: #151d2a;
 }
+
+/* Темная тема */
+
+.dark {
+    background: #151d2a;
+}
+
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(60px);
+}
