@@ -1,3 +1,15 @@
+// Создание скрипта для переключателя 
+const formatSwitchBtn = document.querySelector(".format-switch-btn");
+formatSwitchBtn.addEventListener("click", () => {
+  formatSwitchBtn.classList.toggle("active");
+  let formatValue = formatSwitchBtn.getAttribute("data-format");
+  if (formatValue === "12") {
+    formatSwitchBtn.setAttribute("data-format", "24");
+  } else {
+    formatSwitchBtn.setAttribute("data-format", "12");
+  }
+});
+// Настройка часов
 function digitalClock(){
     let dateFunction = new Date()
     let day = dateFunction.getDay()
@@ -36,4 +48,12 @@ toggle.addEventListener("change", () => {
     sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
   moonIcon.className =
     moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+});
+// Настройка кнопки
+
+const dotmenuBtn = document.querySelector(".dot-menu-btn");
+const dotMenu = document.querySelector(".dot-menu");
+
+dotmenuBtn.addEventListener("click", () => {
+  dotMenu.classList.toggle("active");
 });
