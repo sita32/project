@@ -205,3 +205,23 @@ svg {
     justify-content: center;
     align-items: center;
 }
+/* Цвета для переключателя  */
+
+.format-switch-btn:before {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #ff5e9a;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px #ff5e9a;
+    transform: translateX(-10px);
+    transition: 0.3s ease;
+
+}
+
+.format-switch-btn.active:before {
+    background: #0fbb8d;
+    box-shadow: 0px 5px 25px #0fbb8d;
+    transform: translateX(10px);
+}
