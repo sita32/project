@@ -154,3 +154,30 @@ input {
     background: #fafafa;
     transform: translateX(60px);
 }
+
+/* Переключатель в 24 формат */
+
+svg {
+    cursor: pointer;
+}
+
+/* Создание всплывающего меню */
+
+.dot-menu {
+    margin-top: -35px;
+    margin-left: 30px;
+    width: 200px;
+    z-index: 999;
+    list-style: none;
+    background: #dddddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.dot-menu.active {
+    visibility: visible;
+    opacity: 1;
+}
