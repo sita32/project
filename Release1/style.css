@@ -181,3 +181,27 @@ svg {
     visibility: visible;
     opacity: 1;
 }
+/* Создание переключателя */
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-format-text{
+    color: #efefef; 
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+.format-switch-btn {
+    width: 35px;
+    height: 15px;
+    background: #485470;
+    border-radius: 75px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
